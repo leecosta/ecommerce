@@ -10,7 +10,7 @@ import { NavComponent } from './components/shared/nav/nav.component';
 import { BookstoreAppComponent } from './components/bookstore-app/bookstore-app.component';
 import { FiltersComponent } from './components/bookstore-app/filters/filters.component';
 import { ProductListComponent } from './components/bookstore-app/product-list/product-list.component';
-import { ProductLineComponent } from './components/bookstore-app/product-list/product-line/product-line.component';
+import { ProductItemComponent } from './components/bookstore-app/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ProductLineComponent } from './components/bookstore-app/product-list/pr
     BookstoreAppComponent,
     FiltersComponent,
     ProductListComponent,
-    ProductLineComponent,
+    ProductItemComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [BookService],
