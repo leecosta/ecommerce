@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { BookService } from './components/bookstore-app/product-list/product-list.component.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,12 +21,10 @@ import { ProductLineComponent } from './components/bookstore-app/product-list/pr
     BookstoreAppComponent,
     FiltersComponent,
     ProductListComponent,
-    ProductLineComponent
+    ProductLineComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, HttpClientModule],
+  providers: [BookService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
